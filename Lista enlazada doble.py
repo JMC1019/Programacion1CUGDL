@@ -28,3 +28,4 @@ while current:
     print(current.dato, end=" <- ")
     current = current.prev
 print("None")
+print("Prueba de actualización de nodos")
