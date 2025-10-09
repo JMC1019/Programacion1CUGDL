@@ -28,4 +28,3 @@ while current:
     print(current.dato, end=" <- ")
     current = current.prev
 print("None")
-print("Actualizacion")
