@@ -1,5 +1,5 @@
 alumnos = []
-continuar = "s"
+continuar = 1
 
 def agregar_alumno(nombre, edad, carrera):
     alumno = {
@@ -10,13 +10,11 @@ def agregar_alumno(nombre, edad, carrera):
     alumnos.append(alumno)
     return
 
-while continuar == "s":
+while continuar <=3:
     nombre = input("Ingrese el nombre del alumno: ")
     edad = int(input("Ingrese la edad del alumno: "))
     carrera = input("Ingrese la carrera del alumno: ")
     agregar_alumno(nombre, edad, carrera)
-    continuar = input("¿Desea agregar otro alumno? (s/n): ")
-    if continuar != "s":
-        break
+    continuar += 1
 
 print(alumnos)
