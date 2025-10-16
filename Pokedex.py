@@ -20,7 +20,7 @@ def elimimar_pokemon(nombre):
             lista_global.remove(pokemon)
             print(f"Pokemon {nombre} eliminado de la Pokedex")
         else:
-            print("No se encontro el poquemon")
+            print("Pokemon no encontrado")
 
 while continuar == "si":
     print("\n**** Menu Pokedex ****"
