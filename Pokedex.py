@@ -1,6 +1,5 @@
 continuar="si"
 lista_global = []
-
 def agregar_pokemon(nombre, tipo, nivel):
     pokemon = {
         'nombre': nombre,
@@ -9,21 +8,18 @@ def agregar_pokemon(nombre, tipo, nivel):
     }
     lista_global.append(pokemon)
     return
-
 def mostrar_pokemones():
     print("\n**** Lista de Pokemones ****")
     for pokemon in lista_global:
         print(f"Nombre: {pokemon['nombre']}, Tipo: {pokemon['tipo']}, Nivel: {pokemon['nivel']}")
-
 def elimimar_pokemon(nombre):
     for pokemon in lista_global:
-        if pokoemon['nombre'] == nombre:
+        if pokemon['nombre'] == nombre:
             lista_global.remove(pokemon)
             print(f"Pokemon {nombre} eliminado de la Pokedex")
         else:
             print("No se encontro el poquemon")
     return
-
 while continuar == "si":
     print("\n**** Menu Pokedex ****"
           "\n1. Agregar Pokemon"
