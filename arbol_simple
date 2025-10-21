@@ -1,7 +1,11 @@
 digraph {
-	A [label="Raíz"]
-	B [label=Izquierda]
-	C [label=Derecha]
+	A [label=8]
+	B [label=3]
+	C [label=10]
+	D [label=1]
+	E [label=6]
 	A -> B
 	A -> C
+	B -> D
+	B -> E
 }
