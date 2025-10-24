@@ -17,10 +17,8 @@ def probar_contraseña():
     global contrasenasseguras
     global puntuacion_actual
     puntuacion_actual = 0
-
     print("\n***** Probador/Evaluador de Contraseñas *****")
     intento = input("Ingrese una contraseña: ")
-
     if intento.lower() in lista_debiles:
         contrasenasdebiles += 1
         cantidadtotal += 1
@@ -32,16 +30,13 @@ def probar_contraseña():
             puntuacion_actual += 30
         if any(char in lista_signosespeciales for char in intento):
             puntuacion_actual += 40
-
         registro_historial = {
             "contraseña": intento,
             "puntaje": puntuacion_actual
         }
-
         lista_historial.append(registro_historial)
         contrasenasseguras += 1
         cantidadtotal += 1
-
         print("\nContraseña segura")
         print(f"Puntaje de seguridad: {puntuacion_actual}")
 
@@ -63,7 +58,7 @@ def mostrar_estadísticas():
     print(f"Cantidad de contraseñas débiles: {contrasenasdebiles}")
     print(f"Cantidad de contraseñas seguras: {contrasenasseguras}")
 
-# Funcion mensaje tipo hacker
+# Funcion saludo tipo hacker
 def saludo(nombre):
     print(f"\nConexion al sistema autorizada Bienvenido 0111010101-{nombre}-001100110")
 
